@@ -575,3 +575,85 @@ cursor: pointer;
 display: none;
 }
 
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  #mainpanel,
+  #attributepane,
+  #zoom {
+    position: static;
+    width: 100% !important;
+    margin: 0;
+    border: none;
+  }
+
+  #mainpanel .col,
+  #attributepane {
+    width: 100% !important;
+    padding: 10px;
+  }
+
+  #search input[name=search] {
+    width: 90%;
+  }
+
+  #attributeselect .list {
+    width: 90% !important;
+    margin-left: 0;
+    position: relative;
+  }
+
+  .sigma-expand {
+    background-size: cover;
+  }
+
+  #developercontainer,
+  #copyright {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    margin: 15px auto;
+    text-align: center;
+  }
+
+  #zoom {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    left: 0;
+    width: 100%;
+  }
+
+  #zoom .z {
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  html, body {
+    font-size: 11px;
+  }
+
+  #search input[name=search] {
+    padding: 4px;
+    font-size: 12px;
+  }
+
+  #attributepane .name {
+    font-size: 13px;
+  }
+
+  #mainpanel h2, #mainpanel dl {
+    font-size: 13px;
+  }
+
+  #mainpanel dt {
+    width: 16px;
+    height: 16px;
+  }
+
+  .line {
+    font-size: 11px;
+  }
+}
